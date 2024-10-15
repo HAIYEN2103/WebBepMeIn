@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script> 
+    <title>Website-VietNamRestaurant</title>
+</head>
+<body>
+    <section class="top">
+        <div class = "container">
+                <div class = "row justify-content">
+                <div class = "logo"><img src="image/logo.png" alt=""></div>
+                <div class="menu-bar">
+                    <span></span>
+            　　</div>
+            　　<div class="menu-items">
+                <ul class =navbar>
+                  <li class="menu-item"><a href="#home" class="home-active">ホームページ</a></li>
+                  <li class="menu-item"><a href="#about">About Us</a></li>
+                  <li class="menu-item"><a href="#menu">メニュー</a></li>
+                  <li class="menu-item"><a href="#feedback">フィードバック</a></li>
+                  <li class="menu-item"><a href="#customers">社員</a></li>
+                  <li class="menu-item"><a href="#contact">問い合わせ</a></li>
+                </ul>
+               </div>
+            </div>
+        </div>
+    </section>
+    <section id="home" class="big-image">
+        <div class="big-image-content" data-aos="fade-up" data-aos-duration="1500">
+            <h2>ベップ・メ・イン<br>ベトナムの料理</h2>
+            <p>ベトナム人の料理の精髄</p>
+            <a href="#menu"class="big-image-content-btn btn">メニュ</a>
+        </div>
+    </section>
+      <section class = "bepmein-logo">
+        <div class="bepmein-logo-img">
+            <img src = image/bepmein.png alt="">
+        </div>
+    </section>
+    <section id ="about" class="about section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2 data-title="私たちの">ストーリー</h2>
+            </div>
+        </div>
+       <div class="row">
+            <div class="about-item" data-aos="fade-right" data-aos-duration="1500">
+                <h2>Bep Me Inへようこそ！</h2>
+                <p>Bep Me Inは、ベトナムの家庭料理スタイルの料理を提供するレストランです。屋台料理の専門料理、伝統的な料理、そして現代風にアレンジした料理があります。Bep Me Inは、歴史と文化が色濃く残る路地に位置しています。ベンタン市場の近くの一見目立たない入口から入ると、ユニークなスタイルのダイニング体験が待っています。Bep Me Inは、まるで誰かの家に入って、お母さんが奥のキッチンで料理をしているような雰囲気を提供します。ここでは、ベトナムの母親が家族のために作るクラシックな料理の数々を見つけることができ、快適さと子供時代の思い出、シンプルながらも忘れられない料理をお楽しみいただけます。</p>
+                 <a href="#menu" class="btn">メニュを見る</a>
+                </button>
+            </div>
+            <div class="about-item">
+                <div class="about-item-img" data-aos="fade-left" data-aos-duration="1500">
+                    <!-- <div class ="slide-show"> -->
+                        <div class ="list-images">  
+                            <span>more than 10 years of experience</span>
+                            <img id ="img-main" onclick="changeImage()"src=image/about.png alt="">
+                            <img id ="img-main" onclick="changeImage()"src=image/about5.jpg alt="">
+                            <img id ="img-main" onclick="changeImage()"src=image/about2.jpg alt=""> 
+                            <img id ="img-main" onclick="changeImage()"src=image/about3.jpg alt="">
+                            <img id ="img-main" onclick="changeImage()"src=image/about4.jpeg alt="">                                                    
+                        </div>
+                    <!-- </div> -->
+                    <!-- <span>more than 10 years of experience</span> -->
+                    <!-- <img src = image/about.png alt=""> -->
+                </div>            
+            </div>
+       </div>
+    </div>
+    </section>
+    <section id="menu" class="menu section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-title="オーダー">メニュー</h2>
+                </div>
+            </div> 
+            <div class="row">
+               <div class ="menu-title">
+                <button class="menu-button active" data-title="#lunch">ランチ</button>
+                <button class="menu-button" data-title="#dinner">デイナー</button>
+                <button class="menu-button" data-title="#drink">ドリンク</button>
+                <button class="menu-button" data-title="#dessert">デザート</button>
+               </div>
+            </div>
+            <div class="row justify-content"> 
+                <div class="menu-item-content active"id ="lunch">
+                    <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/Menu28.jpg" alt="">
+                        <p> ブン　チャー</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/Menu27.jpg" alt="">
+                        <p>ブン ティット ヌオン</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.200円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/Menu26.jpg" alt="">
+                        <p>バイン セオ</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.100円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/Menu25.jpg" alt="">
+                        <p>チャーハン</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.000円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/Menu12.jpg" alt="">
+                        <p>バイン ホイ</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.200円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/Menu4.jpg" alt="">
+                        <p>ブン ティット ヌオン</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.050円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/Menu17.jpg" alt="">
+                        <p>バイン ダップ</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.200円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/Menu16.jpg" alt="">
+                        <p>豚肉のハチミツ胡麻揚げ</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.000円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/Menu19.jpg" alt="">
+                        <p>バイン ホイ シューマイ</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/Menu14.jpg" alt="">
+                        <p>チャーカーラーヴォン</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.300円(税込)</p>   
+                    </div>   
+                </div>             
+                </div>
+                <div class="menu-item-content" id="dinner">
+                    <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/Menu8.jpg" alt="">
+                        <p>塩豚足のカリカリ揚げ</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/Menu5.jpg" alt="">
+                        <p>若い豚皮のニンニク炒め</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/Menu3.jpg" alt="">
+                        <p>リブのご飯 <br>
+                            (Rice with ribs)</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/Menu24.jpg" alt="">
+                        <p>蒸しパンガシウス <br>
+                             (Steamed pangasius)</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/Menu25.jpg" alt="">
+                        <p>ココナッツフライドライス</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/Menu10.jpg" alt="">
+                        <p>卵入り豚肉の煮込み</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/Menu11.jpg" alt="">
+                        <p>ルクラック牛肉<br>(Shaking beef)</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/Menu13.jpg" alt="">
+                        <p>クレイポットで煮込んだスネークヘッドフィッシュ</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/Menu23.jpg" alt="">
+                        <p>ブロークンライス<br>(Broken rice)</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/Menu21.jpg" alt="">
+                        <p>蓮茎とエビのポークサラダ</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>             
+                </div>
+                <div class="menu-item-content" id="drink">
+                    <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/drink1.jpg" alt="">
+                        <p>ピーチティークリームフレッシュ</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/drink2.jpg" alt="">
+                        <p>ピーチティー</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/drink3.jpg" alt="">
+                        <p>ピーチレモングラスティー</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/drink4.jpg" alt="">
+                        <p>ハノイビール</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/drink5.jpg" alt="">
+                        <p>サイゴンビール</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/drink6.jpg" alt="">
+                        <p>焼酎<br>(Shochu)</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/drink7.jpg" alt="">
+                        <p>タオメオワイン</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/drink8.jpg" alt="">
+                        <p>塩漬けクエン酸柑橘茶</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/drink9.jpg" alt="">
+                        <p>コカコーラ</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/drink 10.jpg" alt="">
+                        <p> シュガーケーンピーチティー</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>             
+                </div>
+                <div class="menu-item-content" id="dessert">
+                    <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/banh1.jpg" alt="">
+                        <p>レイヤーケーキ</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p> 
+                    </div>   
+                </div>
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/banh2.jpg" alt="">
+                        <p>ティアシム</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/banh3.jpg" alt="">
+                        <p>レモンケーキ</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/banh4.jpg" alt="">
+                        <p>バンピア</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/che7.jpg" alt="">
+                        <p>フルーツチェー </p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/che8.jpeg" alt="">
+                        <p>フランゼリー</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/che1.jpg" alt="">
+                        <p>タイチェー</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/che3.jpg" alt="">
+                        <p>ジャックフルーツヨーグルト</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/che4.jpg" alt="">
+                        <p>パンダンリーフチェー</p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>        
+                <div class="food-items">
+                    <div class="food-item">
+                        <img src="image/che5.jpg" alt="">
+                        <p> ココナッツミルクチェー </p>
+                    </div> 
+                    <div class="food-price">
+                        <p>1.250円(税込)</p>   
+                    </div>   
+                </div>             
+                </div>             
+            </div>
+        </div>   
+    </section>
+    <section id="feedback" class = "feedback section-padding">
+        <div class="container">
+            <div class ="row">
+                <div class ="section-title">
+                    <h2 data-title="opinion">フィードバック</h2>
+                </div>              
+            </div>
+        <div class="row">
+            <div class ="feedback-items">
+                    <div class ="feedback-item">
+                        <div class = "feedback-item-content">
+                            <div class = "feedback-item-img-content-text">
+                                <h2>小林さん</h2>
+                                <span>Food Specialist</span>
+                            </div>
+                            <div class = "feedback-item-img-content-img">
+                                <img src="image/user1.jpg" alt="">   
+                            </div>
+                   </div>
+                 <p> お野菜のグリルはもちろんどのコースにも含まれてます。パイナップルのグリルとか美味しいよなあ。</br>
+                    軽く火は通されてるのでタンパク質を分解する酵素云々はどのくらい有効かわかりませんが（笑）、</br>
+                    お肉の合間に食べると、私は結構スッキリするんですよね。そしてお野菜がどれも美味しい！</p>
+                 <div class ="feedback-start">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                </div>
+                </div>
+                <div class ="feedback-item">
+                        <div class = "feedback-item-content">
+                            <div class = "feedback-item-img-content-text">
+                                <h2>中島さん</h2>
+                                <span>Food Specialist</span>
+                            </div>
+                            <div class = "feedback-item-img-content-img">
+                                <img src="image/user1.jpg" alt="">   
+                            </div>
+                        </div>
+                 <p> お野菜のグリルはもちろんどのコースにも含まれてます。パイナップルのグリルとか美味しいよなあ。</br>
+                    軽く火は通されてるのでタンパク質を分解する酵素云々はどのくらい有効かわかりませんが（笑）、</br>
+                    お肉の合間に食べると、私は結構スッキリするんですよね。そしてお野菜がどれも美味しい！</p>
+                 <div class ="feedback-start">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                </div>
+              </div>
+               <div class ="feedback-item">
+                        <div class = "feedback-item-content">
+                            <div class = "feedback-item-img-content-text">
+                                <h2>高橋さん</h2>
+                                <span>Food Specialist</span>
+                            </div>
+                            <div class = "feedback-item-img-content-img">
+                                <img src="image/user1.jpg" alt="">   
+                            </div>
+                        </div>
+                 <p> お野菜のグリルはもちろんどのコースにも含まれてます。パイナップルのグリルとか美味しいよなあ。</br>
+                    軽く火は通されてるのでタンパク質を分解する酵素云々はどのくらい有効かわかりませんが（笑）、</br>
+                    お肉の合間に食べると、私は結構スッキリするんですよね。そしてお野菜がどれも美味しい！</p>
+                 <div class ="feedback-start">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                </div>
+              </div>
+             </div>
+        </div>
+        </div>
+    </section>
+    <!-- /footer-->
+     <section id="contact" class="footer section-padding" id="footer">
+        <div class =footer-box>
+            <a href="#" class = "logo"><i class='bx bx-bowl-rice' ></i>Bep Me Inへようこそ</a>
+            <p>東京都葛飾区新小岩</p>
+            <div class="social">
+            <a href="#" class = "logo"><i class='bx bxl-facebook'></i></a>
+            <a href="#" class = "logo"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class = "logo"><i class='bx bxl-twitter'></i></a>
+            <a href="#" class = "logo"><i class='bx bxl-youtube'></i></a>             
+            </div>    
+        </div>
+        <div class ="footer-box">
+            <h2>おトクなおすすめセット</h2>
+            <a href="#">ランチ</a>
+            <a href="#">デイナー</a>
+            <a href="#">ドリンク</a>
+            <a href="#">デザート</a>
+        </div>
+         <div class ="footer-box">
+            <h2>役立つリンク</h2>
+            <a href="#">ぐるなび</a>
+            <a href="#">食べログ</a>
+            <a href="#">ホットペッパーグルメ </a>
+            <a href="#">ヒトサラ </a>
+        </div>
+        <div class ="footer-box">
+            <h2>お問い合わせ</h2>
+            <p>電話番号: 03-1234-5678</p>
+            <p>Eメール: info@bepmein.com</p>
+        </div>
+        <div class ="footer-box">
+            <h2>申し込み</h2>
+            <p>初回注文から 10% オフ</p>
+             <form action="">
+                <i class='bx bxs-envelope' ></i>
+                <input type="email" name="email" placeholder="Enter your email">
+                <i class='bx bx-arrow-back' ></i>
+                <button type="submit">Subscribe</button>
+             </form>         
+        </div>
+        <!-- <div class="footer-copyright">
+            <p>�� 2023 Bep Me In. All rights reserved.</p>
+        </div> -->
+     </section>
+
+     <!-- Copy right
+     <div class="copyright">
+        <p>© 2023 TIGI VIETNAM</p>
+     </div> -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--link to js-->
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+     
+</body>
+</html> 
